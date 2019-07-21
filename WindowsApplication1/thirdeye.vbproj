@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BB3A817-0099-4AF6-A065-7067BE130170}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>thirdeye.My.MyApplication</StartupObject>
+    <RootNamespace>thirdeye</RootNamespace>
+    <AssemblyName>thirdyeye</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Third EYE\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>third eye</ProductName>
+    <PublisherName>aswal</PublisherName>
+    <SuiteName>third eye</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>thirdyeye.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>thirdyeye.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DD75FABF20A9834FC18F431F22310AD577F3B80E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>thirdeye_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\maradmin.Designer.vb">
+      <DependentUpon>maradmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin\maradmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\hinadmin.Designer.vb">
+      <DependentUpon>hinadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin\hinadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\menuadmin.Designer.vb">
+      <DependentUpon>menuadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin\menuadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="details\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="details\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="details\help.Designer.vb">
+      <DependentUpon>help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="details\help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\ecricketset.Designer.vb">
+      <DependentUpon>ecricketset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\ecricketset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\einterviewset.Designer.vb">
+      <DependentUpon>einterviewset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\einterviewset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\edocumentset.Designer.vb">
+      <DependentUpon>edocumentset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\edocumentset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\ebookset.Designer.vb">
+      <DependentUpon>ebookset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\ebookset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\enewsset.Designer.vb">
+      <DependentUpon>enewsset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\enewsset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\ejokesset.Designer.vb">
+      <DependentUpon>ejokesset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\ejokesset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\estoryset.Designer.vb">
+      <DependentUpon>estoryset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\estoryset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english settings\emusicset.Designer.vb">
+      <DependentUpon>emusicset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\emusicset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\edocument.Designer.vb">
+      <DependentUpon>edocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\edocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\einterview.Designer.vb">
+      <DependentUpon>einterview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\einterview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\ebook.Designer.vb">
+      <DependentUpon>ebook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\ebook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\ecricket.Designer.vb">
+      <DependentUpon>ecricket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\ecricket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\engadmin.Designer.vb">
+      <DependentUpon>engadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin\engadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hcricketset.Designer.vb">
+      <DependentUpon>hcricketset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hcricketset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hinterviewset.Designer.vb">
+      <DependentUpon>hinterviewset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hinterviewset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hdocumentset.Designer.vb">
+      <DependentUpon>hdocumentset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hdocumentset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hbookset.Designer.vb">
+      <DependentUpon>hbookset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hbookset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hjokesset.Designer.vb">
+      <DependentUpon>hjokesset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hjokesset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hmusicset.Designer.vb">
+      <DependentUpon>hmusicset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hmusicset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hnewsset.Designer.vb">
+      <DependentUpon>hnewsset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hnewsset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hstoryset.Designer.vb">
+      <DependentUpon>hstoryset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hstoryset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi settings\hradioset.Designer.vb">
+      <DependentUpon>hradioset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi settings\hradioset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hdocument.Designer.vb">
+      <DependentUpon>hdocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hdocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hinterview.Designer.vb">
+      <DependentUpon>hinterview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hinterview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hbook.Designer.vb">
+      <DependentUpon>hbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hcricket.Designer.vb">
+      <DependentUpon>hcricket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hcricket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\minterviewset.Designer.vb">
+      <DependentUpon>minterviewset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\minterviewset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mdocumentset.Designer.vb">
+      <DependentUpon>mdocumentset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mdocumentset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mbookset.Designer.vb">
+      <DependentUpon>mbookset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mbookset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mjokesset.Designer.vb">
+      <DependentUpon>mjokesset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mjokesset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mmusicset.Designer.vb">
+      <DependentUpon>mmusicset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mmusicset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mnewsset.Designer.vb">
+      <DependentUpon>mnewsset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mnewsset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mstoryset.Designer.vb">
+      <DependentUpon>mstoryset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mstoryset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi settings\mradioset.Designer.vb">
+      <DependentUpon>mradioset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi settings\mradioset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mdocument.Designer.vb">
+      <DependentUpon>mdocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mdocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\minterview.Designer.vb">
+      <DependentUpon>minterview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\minterview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mbook.Designer.vb">
+      <DependentUpon>mbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\emusic.Designer.vb">
+      <DependentUpon>emusic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\emusic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hmusic.Designer.vb">
+      <DependentUpon>hmusic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hmusic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mmusic.Designer.vb">
+      <DependentUpon>mmusic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mmusic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mjokes.Designer.vb">
+      <DependentUpon>mjokes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mjokes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hjokes.Designer.vb">
+      <DependentUpon>hjokes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hjokes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\ejokes.Designer.vb">
+      <DependentUpon>ejokes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\ejokes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\estory.Designer.vb">
+      <DependentUpon>estory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\estory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mstory.Designer.vb">
+      <DependentUpon>mstory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mstory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hstory.Designer.vb">
+      <DependentUpon>hstory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hstory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mnews.Designer.vb">
+      <DependentUpon>mnews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mnews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\enews.Designer.vb">
+      <DependentUpon>enews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\enews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hnews.Designer.vb">
+      <DependentUpon>hnews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hnews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hindi\hradio.Designer.vb">
+      <DependentUpon>hradio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hindi\hradio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marathi\mradio.Designer.vb">
+      <DependentUpon>mradio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="marathi\mradio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="english\enradio.Designer.vb">
+      <DependentUpon>enradio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english\enradio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main menus\maramenu.Designer.vb">
+      <DependentUpon>maramenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main menus\maramenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main menus\hinmenu.Designer.vb">
+      <DependentUpon>hinmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main menus\hinmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main menus\engmenu.Designer.vb">
+      <DependentUpon>engmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main menus\engmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main menus\main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main menus\main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="english settings\enradioset.Designer.vb">
+      <DependentUpon>enradioset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="english settings\enradioset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admin\admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\maradmin.resx">
+      <DependentUpon>maradmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\hinadmin.resx">
+      <DependentUpon>hinadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\menuadmin.resx">
+      <DependentUpon>menuadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="details\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="details\help.resx">
+      <DependentUpon>help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\ecricketset.resx">
+      <DependentUpon>ecricketset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\einterviewset.resx">
+      <DependentUpon>einterviewset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\edocumentset.resx">
+      <DependentUpon>edocumentset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\ebookset.resx">
+      <DependentUpon>ebookset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\enewsset.resx">
+      <DependentUpon>enewsset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\ejokesset.resx">
+      <DependentUpon>ejokesset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\estoryset.resx">
+      <DependentUpon>estoryset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\emusicset.resx">
+      <DependentUpon>emusicset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\edocument.resx">
+      <DependentUpon>edocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\einterview.resx">
+      <DependentUpon>einterview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\ebook.resx">
+      <DependentUpon>ebook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\ecricket.resx">
+      <DependentUpon>ecricket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\engadmin.resx">
+      <DependentUpon>engadmin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hcricketset.resx">
+      <DependentUpon>hcricketset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hinterviewset.resx">
+      <DependentUpon>hinterviewset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hdocumentset.resx">
+      <DependentUpon>hdocumentset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hbookset.resx">
+      <DependentUpon>hbookset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hjokesset.resx">
+      <DependentUpon>hjokesset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hmusicset.resx">
+      <DependentUpon>hmusicset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hnewsset.resx">
+      <DependentUpon>hnewsset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hstoryset.resx">
+      <DependentUpon>hstoryset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi settings\hradioset.resx">
+      <DependentUpon>hradioset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hdocument.resx">
+      <DependentUpon>hdocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hinterview.resx">
+      <DependentUpon>hinterview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hbook.resx">
+      <DependentUpon>hbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hcricket.resx">
+      <DependentUpon>hcricket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\minterviewset.resx">
+      <DependentUpon>minterviewset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mdocumentset.resx">
+      <DependentUpon>mdocumentset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mbookset.resx">
+      <DependentUpon>mbookset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mjokesset.resx">
+      <DependentUpon>mjokesset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mmusicset.resx">
+      <DependentUpon>mmusicset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mnewsset.resx">
+      <DependentUpon>mnewsset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mstoryset.resx">
+      <DependentUpon>mstoryset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi settings\mradioset.resx">
+      <DependentUpon>mradioset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mdocument.resx">
+      <DependentUpon>mdocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\minterview.resx">
+      <DependentUpon>minterview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mbook.resx">
+      <DependentUpon>mbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\emusic.resx">
+      <DependentUpon>emusic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hmusic.resx">
+      <DependentUpon>hmusic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mmusic.resx">
+      <DependentUpon>mmusic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mjokes.resx">
+      <DependentUpon>mjokes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hjokes.resx">
+      <DependentUpon>hjokes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\ejokes.resx">
+      <DependentUpon>ejokes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\estory.resx">
+      <DependentUpon>estory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mstory.resx">
+      <DependentUpon>mstory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hstory.resx">
+      <DependentUpon>hstory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mnews.resx">
+      <DependentUpon>mnews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\enews.resx">
+      <DependentUpon>enews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hnews.resx">
+      <DependentUpon>hnews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hindi\hradio.resx">
+      <DependentUpon>hradio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marathi\mradio.resx">
+      <DependentUpon>mradio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english\enradio.resx">
+      <DependentUpon>enradio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main menus\maramenu.resx">
+      <DependentUpon>maramenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main menus\hinmenu.resx">
+      <DependentUpon>hinmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main menus\engmenu.resx">
+      <DependentUpon>engmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main menus\main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="english settings\enradioset.resx">
+      <DependentUpon>enradioset.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audio\about.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\ebook.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\ecricket.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\edoc.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\einterview.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\ejokes.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\emusic.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\enews.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\eoff.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\eon.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\eradio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\estories.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\english\ewrong.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hbook.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hcricket.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hdoc.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hinterview.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hjokes.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hmusic.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hnews.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hoff.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hon.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hradio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hstory.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\hindi\hwrong.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\langwrong.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\main.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\manual.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mbook.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mcricket.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mdoc.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\minterview.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mjokes.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mmusic.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mnews.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\moff.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mon.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mradio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mstory.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\marathi\mwrong.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\help.PNG" />
+    <None Include="Resources\ABOUTPNG.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
